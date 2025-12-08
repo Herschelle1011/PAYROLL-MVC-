@@ -1,0 +1,244 @@
+﻿@page
+@model Payroll_System.Views.Admin.dashboardModel
+@{
+}
+
+<h1 class="dashboard mt-4">Dashboard</h1>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+@* <div id="sidebar" class="sidebar">
+    <div class="SideBar-options">
+    <a asp-page="/Admin/User">Setup</a>
+    <a asp-page="/Admin/User">Transactions</a>
+    <a asp-page="/Admin/User">Reports</a>
+    <a asp-page="/Admin/User">Utilities</a>
+    <a asp-page="/Admin/User">Settings</a>
+    </div>
+</div> *@
+
+
+<p class="setup">Setup</p>
+
+<div class="wrapper">
+    <button class="card-btn" onclick="location.href='@Url.Page("/Admin/User")'">
+        <span class="label">User</span>
+        <i class="bi bi-person icon"></i>
+    </button>
+
+    <button class="card-btn">
+        <span class="label">Employee</span>
+        <i class="bi bi-people icon"></i>
+    </button>
+
+    <button class="card-btn">
+        <span class="label">Company</span>
+        <i class="bi bi-building icon"></i>
+    </button>
+
+    <button class="card-btn">
+        <span class="label">Mandatory</span>
+        <i class="bi bi-bank icon"></i>
+    </button>
+
+    <button class="card-btn">
+        <span class="label">Shift Codes</span>
+        <i class="bi bi-calendar3 icon"></i>
+    </button>
+
+    <button class="card-btn">
+        <span class="label">Day Type</span>
+        <i class="bi bi-brightness-high icon"></i>
+    </button>
+
+    <button class="card-btn">
+        <span class="label">Other Income</span>
+        <i class="bi bi-person-add icon"></i>
+    </button>
+
+    <button class="card-btn">
+        <span class="label">Other Deduction</span>
+        <i class="bi bi-person-dash icon"></i>
+    </button>
+
+    <button class="card-btn">
+        <span class="label">System Tables</span>
+        <i class="bi bi-grid-3x3 icon demo"></i>
+    </button>
+    </<div>
+
+
+        <p class="category-title activity">Activities</p>
+
+        <div class="wrapper">
+
+
+            <button class="card-btn">
+                <span class="label">DTR</span>
+                <i class="bi bi-fingerprint icon"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Leave Application</span>
+                <i class="bi bi-calendar-x icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Overtime Application</span>
+                <i class="bi bi-clock icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Loans</span>
+                <i class="bi bi-hand-thumbs-up icon"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Payroll Other Income</span>
+                <i class="bi bi-plus-circle icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Payroll Other Deduction</span>
+                <i class="bi bi-dash-circle icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Last Withholding</span>
+                <i class="bi bi-journal-album icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Payroll</span>
+                <i class="bi bi-cash-stack icon"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Change Shift</span>
+                <i class="bi bi-code-slash icon"></i>
+            </button>
+        </div>
+
+        <p class="category-title reports">Reports</p>
+
+        <div class="wrapper">
+            <button class="card-btn">
+                <span class="label">DTR Reports</span>
+                <i class="bi bi-printer icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Payroll Reports</span>
+                <i class="bi bi-printer icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Mandatory Reports</span>
+                <i class="bi bi-printer icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Withholding Tax Reports</span>
+                <i class="bi bi-printer icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Leave Reports</span>
+                <i class="bi bi-printer icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Loan Reports</span>
+                <i class="bi bi-printer icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Accounting Reports</span>
+                <i class="bi bi-printer icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">ATM / Bank</span>
+                <i class="bi bi-credit-card icon demo"></i>
+            </button>
+
+            <button class="card-btn">
+                <span class="label">Demographics</span>
+                <i class="bi bi-bar-chart icon"></i>
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="MenuBar">
+    <div class="dropdown">
+        <button class="dropbtn">Setup<i class="bi bi-chevron-down icon-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Users</a>
+            <a href="#">Employees</a>
+            <a href="#">Company</a>
+            <a href="#">Mandatory Tax Tables</a>
+            <a href="#">Shift Code</a>
+            <a href="#">Day Type</a>
+            <a href="#">Other Income</a>
+            <a href="#">Other Deduction</a>
+            <a href="#">System Tables</a>
+        </div>
+
+
+        <button class="dropbtn">Transactions<i class="bi bi-chevron-down icon-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Users</a>
+            <a href="#">Employees</a>
+            <a href="#">Company</a>
+            <a href="#">Mandatory Tax Tables</a>
+            <a href="#">Shift Code</a>
+            <a href="#">Day Type</a>
+            <a href="#">Other Income</a>
+            <a href="#">Other Deduction</a>
+            <a href="#">System Tables</a>
+        </div>
+
+        <button class="dropbtn">Reports<i class="bi bi-chevron-down icon-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Users</a>
+            <a href="#">Employees</a>
+            <a href="#">Company</a>
+            <a href="#">Mandatory Tax Tables</a>
+            <a href="#">Shift Code</a>
+            <a href="#">Day Type</a>
+            <a href="#">Other Income</a>
+            <a href="#">Other Deduction</a>
+            <a href="#">System Tables</a>
+        </div>
+
+        <button class="dropbtn">Utilities<i class="bi bi-chevron-down icon-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Users</a>
+            <a href="#">Employees</a>
+            <a href="#">Company</a>
+            <a href="#">Mandatory Tax Tables</a>
+            <a href="#">Shift Code</a>
+            <a href="#">Day Type</a>
+            <a href="#">Other Income</a>
+            <a href="#">Other Deduction</a>
+            <a href="#">System Tables</a>
+        </div>
+
+        <button class="dropbtn">Settings<i class="bi bi-chevron-down icon-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Users</a>
+            <a href="#">Employees</a>
+            <a href="#">Company</a>
+            <a href="#">Mandatory Tax Tables</a>
+            <a href="#">Shift Code</a>
+            <a href="#">Day Type</a>
+            <a href="#">Other Income</a>
+            <a href="#">Other Deduction</a>
+            <a href="#">System Tables</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Payroll_System</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Payroll_System.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+
+<body>
+    <header class="main-nav">
+        <navbar class="navbar">
+            <img src="https://rocksontech.com/wp-content/uploads/2024/12/RS_LOGO_LANDSCAPE_WHITE.svg" />
+            <P class="current-page">Dashboard</P>
+            <div class="list-items">
+                <i class="bi bi-search search"></i>
+                <i class="bi bi-bell notification"></i>
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png" class="user" />
+                <p class="username">Renalie<i class="bi bi-chevron-down"></i></p>
+                <partial name ="_LoginPartial" />
+            </div>
+
+
+        </navbar>
+
+
+        <div class="side-bar">
+            <div class="side-elements">
+
+                <svg width="45" height="30" viewBox="0 0 42 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="logo-side">
+                    <rect width="42" height="29" fill="url(#pattern0_201_64)" />
+                    <defs>
+                        <pattern id="pattern0_201_64" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_201_64" transform="scale(0.0119048 0.0172414)" />
+                        </pattern>
+                        <image id="image0_201_64" width="84" height="58" preserveAspectRatio="none" xlink:href="data:image/png;base64,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" />
+                    </defs>
+                </svg>
+
+                <div class="icons">
+                    <hr class="small-line line">
+                    
+                    @* FOR DASHBOARD *@
+                    <div class="hoverDashboard tooltip-icon" data-tooltip="Dashboard">
+                        <a asp-controller="Admin" asp-action="Dashboard">
+                            <i class="bi bi-grid-3x3-gap icon-sidebar"></i>
+                        </a>
+                    </div>
+
+                    <div class="hoverDashboard tooltip-icon" data-tooltip="Calendar">
+                        <a asp-page="/Admin/calendar">
+                            <i class="bi bi-calendar2 icon-sidebar"></i>
+                        </a>
+                    </div>
+
+                    <div class="hoverDashboard tooltip-icon" data-tooltip="File Text">
+                        <a asp-page="/Admin/filetext">
+                            <i class="bi bi-file-text icon-sidebar"></i>
+                        </a>
+                    </div>
+
+                    <hr class="small-line line">
+
+                    <div class="hoverDashboard tooltip-icon" data-tooltip="Boxes">
+                        <a asp-page="/Admin/boxes">
+                            <i class="bi bi-boxes icon-sidebar"></i>
+                        </a>
+                    </div>
+
+                    <div class="hoverDashboard tooltip-icon" data-tooltip="Bar Graph Report">
+                        <a asp-page="/Admin/bargraph">
+                            <i class="bi bi-file-bar-graph icon-sidebar"></i>
+                        </a>
+                    </div>
+
+                    <div class="hoverDashboard tooltip-icon" data-tooltip="Growth">
+                        <a asp-page="/Admin/growth">
+                            <i class="bi bi-graph-up-arrow icon-sidebar"></i>
+                        </a>
+                    </div>
+
+                    <div class="hoverDashboard tooltip-icon" data-tooltip="Organization Diagram">
+                        <a asp-page="/Admin/diagram">
+                            <i class="bi bi-diagram-3 icon-sidebar"></i>
+                        </a>
+                    </div>
+
+                    <div class="hoverDashboard tooltip-icon" data-tooltip="Lab Tools">
+                        <a asp-page="/Admin/lab">
+                            <i class="bi bi-beaker-fill icon-sidebar"></i>
+                        </a>
+                    </div>
+
+                    <hr class="small-line line">
+
+                    <div class="hoverDashboard tooltip-icon" data-tooltip="Settings">
+                        <a asp-page="/Login">
+                            <i class="bi bi-gear icon-sidebar settings"></i>
+                        </a>
+                    </div>
+
+    </header>
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <footer class="footer-section">
+        <div class="footer-elements">
+            <img src="https://rocksontech.com/wp-content/uploads/2024/12/RS_LOGO_LANDSCAPE_WHITE.svg" alt="Rocksontech Logo" />
+
+            <p><i class="bi bi-envelope-at-fill"></i> contact@rocksontech.com</p>
+            <p>Copyright ©2025 Rocksontech. Designed by CoreConcepts.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
