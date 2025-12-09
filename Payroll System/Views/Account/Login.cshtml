@@ -20,6 +20,8 @@
 				<span asp-validation-for="Email" class="text-danger"></span>
 			</div>
 
+
+
 			<div class="mb-3">
 				<label asp-for="Password" class="form-label"></label>
 					<input asp-for="Password" class="form-control PassInput" />
@@ -31,7 +33,13 @@
 					@Html.DisplayNameFor(a => a.RememberMe)
 				</label>
 			</div>
-			<input type="submit" value="LOGIN" class="btn btn-success w-100 p2 btn-login" />
+
+				<form asp-controller="Account" asp-action="Login" method="post">
+					<input type="submit" value="LOGIN" class="btn btn-success w-100 p2 btn-login" />
+				</form>
+
+
+
 			<p class="text-center mt-2">
 				Don't have an account? <a asp-controller="Account" asp-action="Register" class="text-decoration-none">Register</a>
 			</p>
