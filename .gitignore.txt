@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build outputs
+bin/
+obj/
+
+# ASP.NET Core
+*.db-wal
+*.db-shm
+
+# Other temp
+*.cache
