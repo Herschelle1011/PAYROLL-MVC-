@@ -22,10 +22,12 @@
 <p class="setup">Setup</p>
 
 <div class="wrapper">
-    <button class="card-btn" onclick="location.href='@Url.Page("/Admin/User")'">
+
+    <a asp-controller="Admin" asp-action="UsersList" class="card-btn">
         <span class="label">User</span>
         <i class="bi bi-person icon"></i>
-    </button>
+    </a>
+
 
     <button class="card-btn">
         <span class="label">Employee</span>

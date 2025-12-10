@@ -2,6 +2,12 @@ html {
     font-size: 14px;
 }
 
+main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+
 body {
     background-color: #000F33;
     margin: 0 !important;
